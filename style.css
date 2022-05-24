@@ -33,6 +33,11 @@ body{
     flex-wrap: wrap;
 }
 
+.logo:hover{
+    color: aquamarine;
+    fill: aquamarine;
+}
+
 .icon{
     position: relative;
     width: 32px;
@@ -273,6 +278,7 @@ color: aquamarine;
     height: 112px;
     text-align: left;
     font-size: 19px;
+    line-height: 28px;
 }
 
 .comment{
