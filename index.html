@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="mobile.css"> -->
+    <title>web.folio</title>
+</head>
+<body>
+    <header id="header">
+        <container class="pre-header">
+        <section class="logo">
+
+        <article class="icon">
+            <div class="circle"></div>
+        </article>
+
+        <container class="logotype">
+            <svg width="104" height="18" viewBox="0 0 104 18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7538 17.664L8.2408 5.7685H10.7991L13.3234 16.6783L12.7461 16.7007L14.3195 5.7685H17.9418L15.542 17.664H10.7538ZM2.3998 17.664L0 5.7685H3.6223L5.1958 16.7007L4.6298 16.6783L7.1315 5.7685H9.6897L7.1994 17.664H2.3998Z""/>
+                <path d="M20.8721 12.7579V10.4617H28.8412L28.5016 11.0442C28.5016 10.9844 28.5016 10.9284 28.5016 10.8762C28.5016 10.8164 28.5016 10.7604 28.5016 10.7082C28.5016 10.2825 28.3997 9.8755 28.1959 9.4872C27.9922 9.0915 27.6752 8.7704 27.2451 8.524C26.8225 8.2701 26.2791 8.1431 25.615 8.1431C24.9509 8.1431 24.3774 8.285 23.8944 8.5688C23.419 8.8451 23.053 9.2446 22.7964 9.7673C22.5474 10.29 22.4229 10.921 22.4229 11.6602C22.4229 12.4219 22.5436 13.0753 22.7851 13.6204C23.0341 14.1581 23.4001 14.5725 23.8831 14.8637C24.3736 15.1549 24.9811 15.3006 25.7056 15.3006C26.1735 15.3006 26.5772 15.2595 26.9168 15.1774C27.2564 15.0877 27.5319 14.9757 27.7432 14.8413C27.962 14.7069 28.128 14.5576 28.2412 14.3933C28.3544 14.229 28.4223 14.0685 28.445 13.9116H31.9088C31.8635 14.4119 31.69 14.9048 31.3881 15.3902C31.0863 15.8681 30.6674 16.3012 30.1316 16.6895C29.5958 17.0703 28.9431 17.3727 28.1733 17.5968C27.4111 17.8208 26.5395 17.9328 25.5584 17.9328C24.2303 17.9328 23.0719 17.6714 22.0833 17.1487C21.0947 16.6185 20.3287 15.8905 19.7854 14.9645C19.242 14.0311 18.9703 12.9558 18.9703 11.7386C18.9703 10.5065 19.2458 9.4275 19.7967 8.5016C20.3551 7.5681 21.1286 6.8438 22.1172 6.3286C23.1134 5.8058 24.2642 5.5445 25.5698 5.5445C26.9055 5.5445 28.0601 5.8096 29.0336 6.3398C30.0071 6.8625 30.758 7.598 31.2862 8.5464C31.8145 9.4872 32.0786 10.5849 32.0786 11.8395C32.0786 12.0261 32.0748 12.2054 32.0673 12.3771C32.0598 12.5488 32.0484 12.6758 32.0333 12.7579H20.8721Z"/>
+                <path d="M41.505 17.9216C40.5541 17.9216 39.6825 17.6714 38.8901 17.1711C38.0977 16.6708 37.4638 15.995 36.9884 15.1437C36.513 14.285 36.2753 13.3217 36.2753 12.2539C36.2753 12.224 36.2753 12.1979 36.2753 12.1755C36.2753 12.1456 36.2753 12.112 36.2753 12.0747L37.7921 12.0411C37.7921 12.0635 37.7921 12.0859 37.7921 12.1083C37.7921 12.1307 37.7921 12.1531 37.7921 12.1755C37.7921 12.7281 37.9279 13.2134 38.1996 13.6316C38.4713 14.0423 38.8222 14.3597 39.2523 14.5837C39.6825 14.8077 40.1315 14.9197 40.5994 14.9197C41.3691 14.9197 42.037 14.6584 42.603 14.1357C43.1765 13.6055 43.4633 12.7803 43.4633 11.6602C43.4633 10.5401 43.1803 9.7262 42.6143 9.2184C42.0483 8.7032 41.3767 8.4456 40.5994 8.4456C40.1315 8.4456 39.6825 8.5576 39.2523 8.7816C38.8222 8.9981 38.4713 9.308 38.1996 9.7113C37.9279 10.1145 37.7921 10.5961 37.7921 11.1562L36.2753 11.0666C36.2753 9.9913 36.513 9.0429 36.9884 8.2215C37.4638 7.3927 38.0977 6.743 38.8901 6.2726C39.6825 5.7946 40.5541 5.5557 41.505 5.5557C42.4785 5.5557 43.3878 5.7909 44.233 6.2614C45.0783 6.7318 45.7612 7.4225 46.2819 8.3335C46.8102 9.2446 47.0743 10.3535 47.0743 11.6602C47.0743 13.0268 46.8177 14.1767 46.3046 15.1101C45.7914 16.0361 45.1122 16.738 44.267 17.2159C43.4218 17.6864 42.5011 17.9216 41.505 17.9216ZM34.2717 17.664V0.156811H37.7921V17.664H34.2717Z"/>
+                <path d="M51.1972 18C50.6765 18 50.235 17.8208 49.8728 17.4624C49.5105 17.1039 49.3294 16.6671 49.3294 16.1518C49.3294 15.6441 49.5105 15.211 49.8728 14.8525C50.235 14.4941 50.6765 14.3149 51.1972 14.3149C51.7103 14.3149 52.148 14.4941 52.51 14.8525C52.873 15.211 53.054 15.6441 53.054 16.1518C53.054 16.6671 52.873 17.1039 52.51 17.4624C52.148 17.8208 51.7103 18 51.1972 18Z"/>
+                <path d="M56.183 17.664V8.4568H53.681V5.7685H56.183V4.9508C56.183 4.1593 56.288 3.4835 56.5 2.92346C56.718 2.35594 57.013 1.8855 57.383 1.51213C57.752 1.1313 58.167 0.83261 58.628 0.61605C59.096 0.39203 59.575 0.23522 60.065 0.14561C60.563 0.0485399 61.046 0 61.514 0C62.012 0 62.382 0.0298701 62.624 0.0896101C62.873 0.14188 63.039 0.18668 63.122 0.22402V2.92346C63.031 2.89359 62.869 2.85999 62.635 2.82265C62.409 2.78531 62.163 2.76665 61.899 2.76665C61.461 2.76665 61.099 2.82265 60.812 2.93466C60.526 3.0467 60.299 3.211 60.133 3.4275C59.967 3.6366 59.85 3.8867 59.782 4.178C59.714 4.4617 59.68 4.7716 59.68 5.1077V5.7685H62.907V8.4568H59.68V17.664H56.183Z"/>
+                <path d="M70.273 17.9216C68.975 17.9216 67.832 17.6565 66.844 17.1263C65.855 16.5961 65.081 15.8681 64.523 14.9421C63.972 14.0087 63.697 12.9334 63.697 11.7162C63.697 10.5065 63.972 9.4387 64.523 8.5128C65.081 7.5793 65.855 6.855 66.844 6.3398C67.832 5.8171 68.975 5.5557 70.273 5.5557C71.571 5.5557 72.715 5.8171 73.703 6.3398C74.692 6.855 75.462 7.5793 76.013 8.5128C76.571 9.4387 76.85 10.5065 76.85 11.7162C76.85 12.9334 76.571 14.0087 76.013 14.9421C75.462 15.8681 74.692 16.5961 73.703 17.1263C72.715 17.6565 71.571 17.9216 70.273 17.9216ZM70.273 15.1661C70.885 15.1661 71.417 15.0243 71.87 14.7405C72.322 14.4568 72.673 14.0573 72.922 13.542C73.171 13.0193 73.296 12.4107 73.296 11.7162C73.296 11.0218 73.171 10.4207 72.922 9.9129C72.673 9.3976 72.322 9.0019 71.87 8.7256C71.417 8.4493 70.885 8.3111 70.273 8.3111C69.67 8.3111 69.138 8.4493 68.677 8.7256C68.225 9.0019 67.874 9.3976 67.625 9.9129C67.376 10.4207 67.251 11.0218 67.251 11.7162C67.251 12.4107 67.376 13.0193 67.625 13.542C67.874 14.0573 68.225 14.4568 68.677 14.7405C69.138 15.0243 69.67 15.1661 70.273 15.1661Z"/>
+                <path d="M82.676 0.156811V17.664H79.212V0.156811H82.676Z"/>
+                <path d="M85.34 17.664V5.7685H88.815V17.664H85.34ZM87.072 3.8307C86.529 3.8307 86.053 3.6889 85.646 3.4051C85.246 3.1213 85.046 2.72184 85.046 2.2066C85.046 1.68388 85.246 1.28065 85.646 0.996891C86.053 0.713131 86.529 0.571251 87.072 0.571251C87.623 0.571251 88.098 0.713131 88.498 0.996891C88.906 1.28065 89.11 1.68388 89.11 2.2066C89.11 2.72931 88.906 3.1325 88.498 3.4163C88.098 3.6926 87.623 3.8307 87.072 3.8307Z"/>
+                <path d="M97.423 17.9216C96.125 17.9216 94.982 17.6565 93.993 17.1263C93.005 16.5961 92.231 15.8681 91.673 14.9421C91.122 14.0087 90.846 12.9334 90.846 11.7162C90.846 10.5065 91.122 9.4387 91.673 8.5128C92.231 7.5793 93.005 6.855 93.993 6.3398C94.982 5.8171 96.125 5.5557 97.423 5.5557C98.721 5.5557 99.865 5.8171 100.853 6.3398C101.842 6.855 102.611 7.5793 103.162 8.5128C103.721 9.4387 104 10.5065 104 11.7162C104 12.9334 103.721 14.0087 103.162 14.9421C102.611 15.8681 101.842 16.5961 100.853 17.1263C99.865 17.6565 98.721 17.9216 97.423 17.9216ZM97.423 15.1661C98.034 15.1661 98.567 15.0243 99.019 14.7405C99.472 14.4568 99.823 14.0573 100.072 13.542C100.321 13.0193 100.446 12.4107 100.446 11.7162C100.446 11.0218 100.321 10.4207 100.072 9.9129C99.823 9.3976 99.472 9.0019 99.019 8.7256C98.567 8.4493 98.034 8.3111 97.423 8.3111C96.819 8.3111 96.287 8.4493 95.827 8.7256C95.374 9.0019 95.023 9.3976 94.774 9.9129C94.525 10.4207 94.401 11.0218 94.401 11.7162C94.401 12.4107 94.525 13.0193 94.774 13.542C95.023 14.0573 95.374 14.4568 95.827 14.7405C96.287 15.0243 96.819 15.1661 97.423 15.1661Z"/>
+                </svg>                
+        </container>
+
+        </section>
+
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="./index.html#work" class="list__link">Work</a>    
+            </li>
+
+            <li class="nav__item">
+                <a href="./index.html#about" class="list__link">About</a> 
+            </li>
+
+            <li class="nav__item">
+                <a href="./index.html#shop" class="list__link">Shop</a> 
+            </li>
+
+            <li class="nav__item">
+                <a href="./index.html#blog" class="list__link">Blog</a> 
+            </li>
+
+            <li class="nav__item">
+                <a href="./index.html#contact" class="list__link">Contact</a> 
+            </li>
+        </ul>
+
+        <section class="account">
+
+            <article class="cart">Cart (0)</article>
+
+            <article class="menu__button">
+
+                <div class="line"></div>
+
+                <div class="line"></div>
+                
+            </article>
+        </section>
+        </container>
+
+        <container class="post-header">
+            <div class="left__post__header">
+            <h1 class="message">I design digital products that make an impact.</h1>
+            <div class="alex">Hi! I’m Alex, a product designer based in Oakland. I create user-friendly interfaces for fast-growing startups.</div>
+            
+            <button class="hire btn">
+                Hire me! 
+            
+                <img class="mail__ico" src="./img/1.header/btn_mail.svg" alt="">
+        
+            </button>
+
+            <div class="winner">
+                
+                <img class="cup" src="./img/1.header/CUP.svg" alt="">
+                
+                <p class="award">Independent Of The Year</p>
+                <p class="about__award">Annual Awards 2020 • awwwards.com</p>    
+            </div>
+        </div>
+        <div class="photo">
+            <img  class="guy" src="./img/1.header/guy.png" alt="guy">
+        </div>
+        </container>
+
+
+    </header>
+
+    <main>
+        <!-- about -->
+
+        <section class="about" id="about">
+            <div class="left__block">
+            <div class="whatisit">
+            <div class="line">
+                <svg width="72" height="10" viewBox="0 0 72 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-9 5C-3 -0.333333 3 -0.333333 9 5C15 10.3333 21 10.3333 27 5C33 -0.333333 39 -0.333333 45 5C51 10.3333 57 10.3333 63 5C69 -0.333333 75 -0.333333 81 5C87 10.3333 93 10.3333 99 5C105 -0.333333 111 -0.333333 117 5C123 10.3333 129 10.3333 135 5C141 -0.333333 147 -0.333333 153 5C159 10.3333 165 10.3333 171 5" stroke="#4543E8" stroke-width="2"/>
+                    </svg>
+            </div>
+            
+            <div class="name">about</div>
+</div>
+<container class="comment">
+    <div class="stars">
+
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.986 0C11.3667 0 11.7143 0.216101 11.8828 0.557439L14.736 6.33878L21.1155 7.26334C21.4924 7.31796 21.8055 7.58192 21.9231 7.94414C22.0408 8.30635 21.9424 8.70394 21.6695 8.96957L17.0466 13.4695L18.1366 19.8239C18.201 20.1993 18.0466 20.5786 17.7384 20.8023C17.4302 21.026 17.0217 21.0552 16.6848 20.8777L10.9925 17.8781L5.28639 20.8781C4.94947 21.0553 4.5412 21.0258 4.23324 20.802C3.92529 20.5783 3.77107 20.1991 3.83543 19.8239L4.92546 13.4695L0.302517 8.96957C0.0296209 8.70394 -0.0687032 8.30635 0.0489226 7.94414C0.166548 7.58192 0.479703 7.31796 0.8566 7.26334L7.23606 6.33878L10.0893 0.557439C10.2577 0.216101 10.6054 0 10.986 0Z" fill="#4543E8"/>
+        </svg>
+
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.986 0C11.3667 0 11.7143 0.216101 11.8828 0.557439L14.736 6.33878L21.1155 7.26334C21.4924 7.31796 21.8055 7.58192 21.9231 7.94414C22.0408 8.30635 21.9424 8.70394 21.6695 8.96957L17.0466 13.4695L18.1366 19.8239C18.201 20.1993 18.0466 20.5786 17.7384 20.8023C17.4302 21.026 17.0217 21.0552 16.6848 20.8777L10.9925 17.8781L5.28639 20.8781C4.94947 21.0553 4.5412 21.0258 4.23324 20.802C3.92529 20.5783 3.77107 20.1991 3.83543 19.8239L4.92546 13.4695L0.302517 8.96957C0.0296209 8.70394 -0.0687032 8.30635 0.0489226 7.94414C0.166548 7.58192 0.479703 7.31796 0.8566 7.26334L7.23606 6.33878L10.0893 0.557439C10.2577 0.216101 10.6054 0 10.986 0Z" fill="#4543E8"/>
+        </svg>
+
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.986 0C11.3667 0 11.7143 0.216101 11.8828 0.557439L14.736 6.33878L21.1155 7.26334C21.4924 7.31796 21.8055 7.58192 21.9231 7.94414C22.0408 8.30635 21.9424 8.70394 21.6695 8.96957L17.0466 13.4695L18.1366 19.8239C18.201 20.1993 18.0466 20.5786 17.7384 20.8023C17.4302 21.026 17.0217 21.0552 16.6848 20.8777L10.9925 17.8781L5.28639 20.8781C4.94947 21.0553 4.5412 21.0258 4.23324 20.802C3.92529 20.5783 3.77107 20.1991 3.83543 19.8239L4.92546 13.4695L0.302517 8.96957C0.0296209 8.70394 -0.0687032 8.30635 0.0489226 7.94414C0.166548 7.58192 0.479703 7.31796 0.8566 7.26334L7.23606 6.33878L10.0893 0.557439C10.2577 0.216101 10.6054 0 10.986 0Z" fill="#4543E8"/>
+        </svg>
+
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.986 0C11.3667 0 11.7143 0.216101 11.8828 0.557439L14.736 6.33878L21.1155 7.26334C21.4924 7.31796 21.8055 7.58192 21.9231 7.94414C22.0408 8.30635 21.9424 8.70394 21.6695 8.96957L17.0466 13.4695L18.1366 19.8239C18.201 20.1993 18.0466 20.5786 17.7384 20.8023C17.4302 21.026 17.0217 21.0552 16.6848 20.8777L10.9925 17.8781L5.28639 20.8781C4.94947 21.0553 4.5412 21.0258 4.23324 20.802C3.92529 20.5783 3.77107 20.1991 3.83543 19.8239L4.92546 13.4695L0.302517 8.96957C0.0296209 8.70394 -0.0687032 8.30635 0.0489226 7.94414C0.166548 7.58192 0.479703 7.31796 0.8566 7.26334L7.23606 6.33878L10.0893 0.557439C10.2577 0.216101 10.6054 0 10.986 0Z" fill="#4543E8"/>
+        </svg>
+
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.986 0C11.3667 0 11.7143 0.216101 11.8828 0.557439L14.736 6.33878L21.1155 7.26334C21.4924 7.31796 21.8055 7.58192 21.9231 7.94414C22.0408 8.30635 21.9424 8.70394 21.6695 8.96957L17.0466 13.4695L18.1366 19.8239C18.201 20.1993 18.0466 20.5786 17.7384 20.8023C17.4302 21.026 17.0217 21.0552 16.6848 20.8777L10.9925 17.8781L5.28639 20.8781C4.94947 21.0553 4.5412 21.0258 4.23324 20.802C3.92529 20.5783 3.77107 20.1991 3.83543 19.8239L4.92546 13.4695L0.302517 8.96957C0.0296209 8.70394 -0.0687032 8.30635 0.0489226 7.94414C0.166548 7.58192 0.479703 7.31796 0.8566 7.26334L7.23606 6.33878L10.0893 0.557439C10.2577 0.216101 10.6054 0 10.986 0Z" fill="#4543E8"/>
+        </svg>    
+    </div>
+    <p class="talk">Working with Alex was interesting. He went above and beyond what I've asking for and provided such an amazing design for my mobile application.</p>
+    <div class="user__card">
+    <img class="avatar" src="./img/2.5.about-testimonials/Steve_McQuillen.png" alt="avatar">
+    <p class="ceo__name">Steve McQuillen</p>
+    <p class="ceo">CEO @ Vencortex</p>
+    </div>
+    </container>
+    </div>
+
+    <div class="right__block">
+    <container class="bigtext">
+        Trusted by the fastest growing digital startups
+    </container>
+
+    <container class="bignumbrs">
+
+    <div class="years">
+        <p class="how__much">7+</p>
+        <p class="what">Years of experience</p>
+    </div>
+    <div class="projects">
+        <p class="how__much">50+</p>
+        <p class="what">Projects completed</p>
+    </div>
+    <div class="client">
+        <p class="how__much">30+</p>
+        <p class="what">Happy clients</p>
+    </div>
+</container>
+
+<container class="companies">
+        <img src="./img/2.5.about-testimonials/company_1.svg" alt="">
+        <img src="./img/2.5.about-testimonials/company_2.svg" alt="">
+        <img src="./img/2.5.about-testimonials/company_3.svg" alt="">
+        <img src="./img/2.5.about-testimonials/company_4.svg" alt="">
+</container>
+</div>
+        </section>
+
+        <!-- work -->
+
+        <section class="work" id="work">
+            <div class="whatisit work__name">
+                <div class="line">
+                    <svg width="72" height="10" viewBox="0 0 72 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-9 5C-3 -0.333333 3 -0.333333 9 5C15 10.3333 21 10.3333 27 5C33 -0.333333 39 -0.333333 45 5C51 10.3333 57 10.3333 63 5C69 -0.333333 75 -0.333333 81 5C87 10.3333 93 10.3333 99 5C105 -0.333333 111 -0.333333 117 5C123 10.3333 129 10.3333 135 5C141 -0.333333 147 -0.333333 153 5C159 10.3333 165 10.3333 171 5" stroke="#4543E8" stroke-width="2"/>
+                        </svg>
+                </div>
+
+                <div class="name">work</div> 
+            </div>
+
+            <p class="pronounce">Bringing stellar results for every client.</p>
+
+            <div class="posts">
+                <article class="post maize">
+                    <div class="image"></div>
+                    <img src="./img/3.work/1. Maize_website_design.png" alt="" class="picture">
+                    <p class="post__name">Maize Website Design</p>
+                    <img src="./img/3.work/arrow.svg" alt="link" class="arrow">
+                    <p class="post__about">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+                </article>
+
+                <article class="post datadash">
+                    <img src="./img/3.work/2.datadash_product.png" alt="" class="picture">
+                    <p class="post__name">Datadash Product Design</p>
+                    <img src="./img/3.work/arrow.svg" alt="link" class="arrow">
+                    <p class="post__about">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+                </article>
+
+                <article class="post joggr">
+                    <img src="./img/3.work/3. Joggr_website.png" alt="" class="picture">
+                    <p class="post__name">Joggr Website Design</p>
+                    <img src="./img/3.work/arrow.svg" alt="link" class="arrow">
+                    <p class="post__about">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+                </article>
+
+                <article class="post otsuka">
+                    <img src="./img/3.work/4. Otsuka_pharma.png" alt="" class="picture">
+                    <p class="post__name">Otsuka Pharmaceutical</p>
+                    <img src="./img/3.work/arrow.svg" alt="link" class="arrow">
+                    <p class="post__about">Partnering with healthcare researchers to improve patient communications and experience.</p>
+                </article>
+
+                <article class="post design">
+                    <img src="./img/3.work/5. Origin_ui.png" alt="" class="picture">
+                    <p class="post__name">Origin UI/UX Design</p>
+                    <img src="./img/3.work/arrow.svg" alt="link" class="arrow">
+                    <p class="post__about">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
+                </article>
+            </div>
+            <button class="view__btn">View all projects</button>
+        </section>
+
+        <!-- services -->       
+
+        <section class="services">
+
+            <article class="logo__block">
+
+                <div class="service__logo">
+
+                <img src="./img/4.services/line.svg" alt="">
+
+                <div class="name__serv">services</div>
+            </div>
+
+            <div class="services__text">Pushing the boundaries of your potential</div>
+        </article>
+
+        <div class="service branding">
+            <img src="./img/4.services/1. branding.svg" alt="" class="branding__icon">
+
+            <h2 class="service__name">Branding</h2>
+
+            <p class="about__service">Refresh your logo, revamp your website, and even your letterhead— develop a cohesive aesthetic for your brand.</p>
+        </div>
+
+        <div class="service packaging">
+            <img src="./img/4.services/2. packaging.svg" alt="" class="branding__icon">
+
+            <h2 class="service__name">Packaging</h2>
+
+            <p class="about__service">Rethink labels, boxes, signage, and everything that'll help your product make a great first impression.</p>
+        </div>
+        
+        
+            </div>
+        <article class="service__list">
+        
+        <div class="service memorabilia">
+            <img src="./img/4.services/3. memo.svg" alt="" class="branding__icon">
+
+            <h2 class="service__name">Memorabilia</h2>
+
+            <p class="about__service">Choose from easy, affordable options for merch like custom tees and sets of pins.</p>
+        </div>
+
+        <div class="service visual aids">
+            <img src="./img/4.services/4. slash.svg" alt="" class="branding__icon">
+
+            <h2 class="service__name">Visual Aids</h2>
+
+            <p class="about__service">Make your point more convincingly with branded flyers, slides, catalogues, infographics.</p>
+        </div>
+
+        <div class="endless__service">
+            <button type="submit" class="start btn">
+                Start a project
+                <!-- <img src="./img/4.services/arrow_btn.svg" alt="" class="start__arrow"> -->
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="start-arrow">
+                    <path d="M5 12H19"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 18L19 12"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 6L19 12"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </button>
+
+        <article class="lines">
+
+            <img src="./img/4.services/biggest_line.svg" alt="">
+            <img src="./img/4.services/smaller_line.svg" alt="">
+
+        </article>
+
+    </article>
+
+        </section>
+
+        <!-- testimonials -->
+        <section class="testimonials">
+
+            <div class="testi">
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">     
+                <div class="name">Testimonials</div>
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">     
+                </div>
+
+                <p class="direct">Hear it directly from my clients.</p>
+
+                <article class="clients">
+
+                    <div class="cloud">
+                        <div class="rate">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                        </div>
+                        <div class="review">Highly professional</div>
+                        <div class="description">
+                            Alex was in control throughout the project. They delivered on the promised deadlines and we love the work they did!
+                        </div>
+                        <div class="user">
+                            <div class="ava">
+                                <img class="avatar" src="./img/2.5.about-testimonials/Steve_McQuillen.png" alt="avatar">
+                            </div>
+                            
+                            <div class="guess__who">
+                                <p class="ceo__name">Steve McQuillen</p>
+                                <p class="ceo">Marketing Manager, Vowels</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="cloud">
+                        <div class="rate">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                            <img src="./img/2.5.about-testimonials/gold_star.svg" alt="" class="star">
+                        </div>
+                        <div class="review">Creative and fearless</div>
+
+                        <div class="description">
+                            Working with Alex was interesting. He went above and beyond what I've asking for and provided such an amazing design for my mobile application.
+                        </div>
+                        <div class="user">
+                            <div class="ava">
+                            <img class="avatar" src="./img/2.5.about-testimonials/Rebecca_Smith.png" alt="avatar">
+                            </div>
+                            <div class="guess__who">
+                                <p class="ceo__name">Rebecca Smith</p>
+                                <p class="ceo">CEO, Consonants</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="navigation">
+                    <img src="./img/2.5.about-testimonials/left.svg" alt="" class="previous">
+                    <img src="./img/2.5.about-testimonials/right.svg" alt="" class="next">
+                </article>
+        </section>
+
+        <!-- process ++++++++ -->
+        <section class="process">
+            
+            <article class="testi process__label">
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">
+                <div class="name">process</div>
+            </article>
+
+            <article class="about__process">
+                <div class="start__text">Getting started is easy.</div>
+                <div class="footnote">
+                    I've developed a structure that saves time (and money) while making the most of our interactions.
+                </div>   
+            </article>
+
+            <article class="steps">
+                <div class="step">
+                    <div class="step__head">
+                        <div class="step__number">[1]</div>
+                    <div class="from__to">
+                        <img src="./img/6. process/step.svg" alt="">
+                    </div>
+                    </div>
+                    <div class="step__name">Listen</div>
+                    <div class="step__description step__one">
+                        I get to know you and your company, your goals and expectations.
+                    </div>
+                </div>
+                <div class="step">
+
+                    <div class="step__head">
+                        <div class="step__number">[2]</div>
+                    <div class="from__to">
+                        <img src="./img/6. process/step.svg" alt="">
+                    </div>
+                    </div>
+                    <div class="step__name">Ideate</div>
+                    <div class="step__description step__two">
+                        I create a couple of pitches based on the project brief and goals.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__head">
+                        <div class="step__number">[3]</div>
+                    </div>
+                    <div class="step__name">Execute</div>
+                    <div class="step__description step__three">
+                        I work on the approved plan while keeping you in the loop until we have a finished project.
+                </div>
+                </div>
+            </article>
+        </section>
+        <!-- shop ++++++++-->
+        
+        <section class="shop" id="shop">
+
+            <div class="testi">
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">     
+                <div class="name">shop</div>
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">     
+                </div>
+
+                <div class="shop__text  text__first">In a rush?</div>
+                <div class="shop__text  text__sescond">Shop ready designs here.</div>
+
+                <article class="shop__items">
+                    <div class="shop__position">
+                        <img src="./img/7.shop/Ergonomic_Frozen_Pants.png" alt="" class="product__pic">
+                        <div class="price">$ 34.88 USD</div>
+                        <div class="product__name">Ergonomic Frozen Pants</div>
+                        <div class="product__description">In et consequ</div>
+                    </div>
+                    <div class="shop__position">
+                        <img src="./img/7.shop/Handmade Fresh Bike.png" alt="" class="product__pic">
+                        <div class="price">$ 11.35 USD</div>
+                        <div class="product__name">Handmade Fresh Bike</div>
+                        <div class="product__description">Qui in facere</div>
+                    </div>
+                    <div class="shop__position">
+                        <img src="./img/7.shop/Small Soft Pizza.png" alt="" class="product__pic">
+                        <div class="price">$ 80.93 USD</div>
+                        <div class="product__name">Small Soft Pizza</div>
+                        <div class="product__description">Aspernatur expli</div>
+                    </div>
+                </article>
+
+                <button class="shop__btn">
+                    View all products
+                    <img src="./img/7.shop/arrow_btn.svg" alt="">
+                </button>
+        </section>
+
+        <!-- blog -->
+
+        <section class="blog" id="blog">
+            <article class="testi blog__label">
+                <img src="./img/2.5.about-testimonials/wave.svg" alt="" class="wave">
+                <div class="name">blog</div>
+            </article>
+
+            <article class="about__process about__blog">
+                <div class="blog__text">Words On Design, Tech & Other Things I Love</div>
+                <div class="footnote">
+                    <button type="submit" class="explore btn">
+                        Explore all posts
+                        <img src="./img/4.services/arrow_btn.svg" alt="">
+                    </button>
+                </div>   
+            </article>
+
+            <article class="blog__news">
+                <div class="blog__post">
+                    <img src="./img/8.blog/1.circles.png" alt="" class="blog__pic">
+                    <div class="blog__about">
+                    <div class="blog__tag">Design • 6 Oct, 2021</div>
+                    <div class="blog__name">On our obsession with circles</div>
+                    <div class="blog__description">
+                        Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.
+                    </div>
+                </div>
+                    <button class="blog__btn">
+                        View post
+                        <img src="./img/7.shop/arrow_btn.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="blog__post">
+                    <img src="./img/8.blog/2. yayoi_kusama.png" alt="" class="blog__pic">
+                    <div class="blog__about">
+                    <div class="blog__tag">Design • 6 Oct, 2021</div>
+                    <div class="blog__name">From bullet points to Yayoi Kusama— On our obsession with circles</div>
+                    <div class="blog__description">
+                        Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.
+                    </div>
+                </div>
+                    <button class="blog__btn">
+                        View post
+                        <img src="./img/7.shop/arrow_btn.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="blog__post">
+                    <img src="./img/8.blog/3.gig_workers.png" alt="" class="blog__pic">
+                    <div class="blog__about">
+                    <div class="blog__tag">Technology • 6 Oct, 2021</div>
+                    <div class="blog__name">It's a jungle out there for gig workers</div>
+                    <div class="blog__description">
+                        Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.
+                    </div>
+                </div>
+                    <button class="blog__btn">
+                        View post
+                        <img src="./img/7.shop/arrow_btn.svg" alt="">
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <!-- container -->
+
+        <section class="container">
+            <div class="work__block">
+                <p class="work__block__name">Work</p>
+                <p class="work__description">Favorite projects, award-winning campaigns and more.</p>
+                <button class="work__btn">
+                    View all
+                    <img src="./img/4.services/arrow_btn.svg" alt="">
+                </button>
+            </div>
+
+            <article class="about__block">
+                <p class="work__block__name">About</p>
+                <div class="about__description">My journey, career highlights and everything else you need to know.</div>
+                <button class="about__btn">
+                    Get to know me
+                    <img src="./img/4.services/arrow_btn.svg" alt="">
+                </button>
+            </article>
+        </section>
+        <!-- contact -->
+
+        
+    </main>
+    
+    <footer class="footer" id="contact">
+        <article class="logo__footer">
+
+            <div class="footer__logo">
+
+            <img src="./img/4.services/line.svg" alt="">
+
+            <div class="name__serv">contact</div>
+        </div>
+        
+        <article class="long__footer">
+        <div class="footer__text text__left">something in mind?</div>
+        <div class="footer__text text__center">Let's connect.</div>
+        <div class="footer__text text__right">Have someth</div>
+    </article>
+    </article>
+
+    <article class="communication">
+        <div class="mail">alexsmith@example.com</div>
+        
+        <div class="navigate__list">
+            <ul class="navi">
+                <li class="footer__list__item">
+                    <a href="./index.html#work" class="footer__link">Work</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="./index.html#about" class="footer__link">About</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="./index.html#shop" class="footer__link">Shop</a>
+                </li>
+
+                <li class="footer__list__item" >
+                    <a href="./index.html#blog" class="footer__link">Blog</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="./index.html#Contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <ul class="media__list">
+                <li class="footer__list__item" >
+                    <a href="https:\\twitter.com" class="footer__link">Twitter</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="https://linkedin.com/" class="footer__link">LinkedIn</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="https:\\behace.com" class="footer__link">Behace</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="https:\\github.com" class="footer__link">GitHub</a>
+                </li>
+
+                <li class="footer__list__item">
+                    <a href="https:\\dribble.com" class="footer__link">Dribble</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="subscribe__section">
+        <div class="subscribe__description">Subscribe to my weekly newsletter</div>
+        <div class="subscribe">
+            <input type="email" name="email" id="email" class="email">
+            <button class="subscribe__btn">Subscribe</button>
+        </div>
+    </div>
+    </article>
+
+    <article class="post__footer">
+        <div class="copyright">© Template by Sumit Hegde - Powered by Webflow</div>
+
+        <ul class="another__links">
+            <li>Style Guide/</li>
+            <li>Licenses/</li>
+            <li>Instructions/</li>
+            <li>Change Log</li>
+        </ul>
+    </article>
+    </footer>
+</body>
+</html>
