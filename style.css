@@ -67,8 +67,8 @@ nav{
 #Banner{
     padding: 0 0 0 80px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(auto-fill, auto);
+    grid-template-rows: repeat(auto-fill, auto);
     row-gap: 50px;
     column-gap: 100px;
 }
@@ -145,4 +145,18 @@ h1{
 #Banner > img{
     grid-row: 1/6;
     grid-column: 2/3;
+}
+
+#About{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+
+
+h2{
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
 }
