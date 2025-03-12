@@ -148,15 +148,70 @@ h1{
 }
 
 #About{
+    padding: 150px 0 0 80px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
 }
 
-
+h2,
+#About > .about__review > p,
+.about__review > .award > span,
+.achievment__description{
+    color: #000;
+}
 
 h2{
-    color: #000;
     font-size: 48px;
     font-weight: 400;
+}
+
+h5{
+    color: #4543E8;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about__achievments{
+    display: flex;
+    gap: 50px;
+}
+
+.about__achievment{
+    display: flex;
+    flex-direction: column;
+}
+
+.achievment__score{
+    color: #4543E8;
+    font-size: 60px;
+}
+
+.award{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    width: fit-content;
+    height: fit-content;
+    margin: 30px 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.award > img{
+    align-self: center;
+    max-width: 64px;
+    height: fit-content;
+}
+
+.award > .award__name{
+    height: fit-content;
+}
+
+.award > .award__description{
+    height: fit-content;
+    color: #ffffff81;
 }
