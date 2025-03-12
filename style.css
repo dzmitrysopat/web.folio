@@ -68,19 +68,20 @@ nav{
     padding: 80px 0 0 80px;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 50px;
 }
 
 h1{
     font-weight: 400;
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 1/2;
     font-size: 72px;
     height: fit-content;
 }
 
 #Banner > p{
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/2;
     font-size: 22px;
     line-height: 40px;
@@ -90,7 +91,7 @@ h1{
 #Banner > a{
     padding: 20px 40px;
     width: fit-content;
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/2;
     color: #000;
     background-color: #fff;
@@ -107,13 +108,14 @@ h1{
 }
 
 #Banner > .award{
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 1/2;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     width: fit-content;
     height: fit-content;
+    margin: 50px 0;
     align-content: center;
     align-items: center;
     column-gap: 20px;
@@ -139,6 +141,6 @@ h1{
 }
 
 #Banner > img{
-    grid-row: 1/5;
+    grid-row: 1/6;
     grid-column: 2/3;
 }
