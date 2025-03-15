@@ -111,6 +111,7 @@ h1{
 }
 
 #Banner > a:hover{
+    scale: 1.05;
     background-color: aquamarine;
 }
 
@@ -256,6 +257,8 @@ h5{
     display: grid;
     grid-template-columns:repeat(2, auto);
     grid-template-rows: repeat(6, auto);
+    row-gap: 50px;
+    column-gap: 100px;
  }
 
 #work > h5{
@@ -281,9 +284,37 @@ h5{
 }
 
 #Work > div:nth-child(5){
-    grid-column: 1/ span 2;
+    margin-right: 150px;
+    grid-column: 1 / span 2;
+    width: fit-content;
+    height: fit-content;
+    justify-self: end;
+}
+
+#Work  > div:nth-child(7){
     justify-items: flex-end;
-    margin-right: 10%;
+}
+
+.project__item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.project__item:hover{
+    scale: 1.05;
+}
+
+.project__item > h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__item > p {
+    line-height: 28px;
 }
 
 #Work > .work__link{
