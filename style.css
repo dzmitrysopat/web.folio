@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 2px solid lightgreen;
+    /* outline: 2px solid lightgreen; */
     color: #fff;
 }
 
@@ -16,6 +16,10 @@ html{
 body{
     margin: 0 auto;
     max-width: 1400px;
+}
+
+h2,h3,p,span{
+    color: #000;
 }
 
 header,
@@ -88,6 +92,7 @@ h1{
     font-weight: 300;
     line-height: 40px;
     height: fit-content;
+    color: #fff;
 }
 
 #Banner > a{
@@ -133,6 +138,7 @@ h1{
     grid-column: 2/3;
     grid-row: 1/2;
     height: fit-content;
+    color: #fff;
 }
 
 .award > .award__description{
@@ -190,7 +196,6 @@ h5{
     text-transform: uppercase;
 }
 
-
 .review__description{
     line-height: 28px;
     letter-spacing: 1px;
@@ -246,3 +251,61 @@ h5{
     grid-column: 2/3;
 }
 
+ #Work{
+    padding: 150px 0 0 80px;
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+ }
+
+#work > h5{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: fit-content;
+}
+
+#Work > h2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: fit-content;
+}
+
+#Work > div:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#Work > div:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#Work > div:nth-child(5){
+    grid-column: 1/ span 2;
+    justify-items: flex-end;
+    margin-right: 10%;
+}
+
+#Work > .work__link{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    width: 160px;
+    height: 160px;
+    background-color: #4543E8;
+    align-content: center;
+    border: 2px solid #4543E8;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 25px;
+    /* font-weight: 300; */
+    transition: all .4s;
+}
+
+.work__link:hover{
+    background-color: inherit !important;
+    border: 2px solid #4543E8;
+    color: #4543E8;
+    scale: 1.03;
+}
