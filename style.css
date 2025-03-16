@@ -23,7 +23,8 @@ h2,h3,p,span{
 }
 
 header,
-#Banner{
+#Banner,
+#Services{
     background-color: #010032;
 }
 
@@ -95,7 +96,8 @@ h1{
     color: #fff;
 }
 
-#Banner > a{
+#Banner > a,
+#Services > a{
     padding: 20px 40px;
     width: fit-content;
     grid-row: 4/5;
@@ -259,6 +261,7 @@ h5{
     grid-template-rows: repeat(6, auto);
     row-gap: 50px;
     column-gap: 100px;
+    margin: 0 0 150px 0;
  }
 
 #work > h5{
@@ -340,3 +343,26 @@ h5{
     color: #4543E8;
     scale: 1.03;
 }
+
+    #Services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#Services > .services__name > h5,
+#Services > .services__name > h2,
+.service__name,
+#Services > div > p{
+    color: #fff;
+}
+
+.services__name{
+    display: flex;
+    flex-direction: column;
+}
+
+.service__item{
+    max-width: 290px;
+}
+
