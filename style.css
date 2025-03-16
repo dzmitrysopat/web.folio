@@ -97,7 +97,7 @@ h1{
 }
 
 #Banner > a,
-#Services > a{
+#Services > article > a{
     padding: 20px 40px;
     width: fit-content;
     grid-row: 4/5;
@@ -254,7 +254,7 @@ h5{
     grid-column: 2/3;
 }
 
- #Work{
+#Work{
     padding: 150px 0 0 80px;
     display: grid;
     grid-template-columns:repeat(2, auto);
@@ -379,10 +379,30 @@ h5{
 }
 
 .service__description{
+    font-weight: 300;
     font-size: 18px;
     line-height: 28px;
 }
 
 #Services > div:nth-child(4){
     margin-left: 130px;
+}
+
+
+.service__btn{
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#Services > article > a{
+    margin-right: 10px;
+}
+
+.waves{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: end;
 }
