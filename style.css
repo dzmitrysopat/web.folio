@@ -217,7 +217,8 @@ h5{
     flex-direction: column;
 }
 
-.achievment__score{
+.achievment__score,
+.step__number{
     color: #4543E8;
     font-size: 60px;
 }
@@ -426,7 +427,7 @@ h5{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .review{
@@ -466,5 +467,107 @@ h5{
 
 .btn__left:active,
 .btn__right:active{
-    scale: 1.7;
+    scale: 2;
 }
+
+#Process{
+    padding: 150px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 50px;
+    column-gap: 200px;
+    text-align: justify;
+}
+
+#Process > h5{
+    grid-row: 1/2;
+    grid-column: 1 /span 3;
+    font-weight: 400;
+    align-content: center;
+}
+
+#Process > h5::before{
+    margin: 0 10px 0 0;
+    content: url('./img/wave.svg');
+}
+
+#Process > h2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#Process > p{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    line-height: 34px;
+}
+
+#Process > .step:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#Process > .step:nth-child(5){
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#Process > .step:nth-child(6){
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#Process > .process__steps{
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+.process__steps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.step{
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    row-gap: 15px;
+    align-items: center;    
+}
+
+.step > span{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 48px;
+}
+
+.step__number::before{
+    content: '[';
+}
+
+.step__number::after{
+    content: ']';
+}
+
+.step > img{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.step > h3{
+    font-size: 24px;
+    font-weight: 400;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.step > p{
+    line-height: 28px;
+    grid-row: 3/4;
+    grid-column: 1/span 2;
+}
+
+
