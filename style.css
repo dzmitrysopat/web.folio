@@ -440,7 +440,31 @@ h5{
     border-radius: 20px 20px 0 20px;
 }
 
-.award > .award__name:not(:first-of-type),
-.award > .award__description:not(:first-of-type){
+.review > .award > .award__name,
+.review > .award > .award__description{
     color: #000 !important;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn__left,
+.btn__right{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn__left:hover,
+.btn__right:hover{
+    scale: 1.3;
+}
+
+.btn__left:active,
+.btn__right:active{
+    scale: 1.7;
 }
