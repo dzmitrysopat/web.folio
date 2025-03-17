@@ -112,7 +112,8 @@ h1{
     transition: all .4s;
 }
 
-#Banner > a:hover{
+#Banner > a:hover,
+#Services > article > a:hover{
     scale: 1.05;
     background-color: aquamarine;
 }
