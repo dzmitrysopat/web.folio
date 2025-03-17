@@ -440,6 +440,7 @@ h5{
     border-radius: 20px 20px 0 20px;
 }
 
-.award > span:not(:first-child){
+.award > .award__name:not(:first-of-type),
+.award > .award__description:not(:first-of-type){
     color: #000 !important;
 }
