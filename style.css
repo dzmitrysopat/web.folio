@@ -265,7 +265,7 @@ h5{
     margin: 0 0 150px 0;
  }
 
-#work > h5{
+#Work > h5{
     grid-column: 1/2;
     grid-row: 1/2;
     height: fit-content;
@@ -334,7 +334,6 @@ h5{
     text-transform: uppercase;
     padding: 0 20px;
     line-height: 25px;
-    /* font-weight: 300; */
     transition: all .4s;
 }
 
@@ -389,7 +388,6 @@ h5{
     margin-left: 130px;
 }
 
-
 .service__btn{
     margin-left: 90px;
     display: flex;
@@ -397,13 +395,51 @@ h5{
     gap: 55px;
 }
 
-#Services > article > a{
-    margin-right: 10px;
-}
-
 .waves{
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: end;
+}
+
+#Testimonials{
+    padding: 150px 80px;
+    background-color: #D8D8EB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#Testimonials > h5{
+    font-weight: 400;
+    /* margin-bottom: 25px; */
+}
+
+#Testimonials > h5::before,
+#Testimonials > h5::after{
+    margin: 0 15px;
+    content: url('./img/wave.svg');
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    text-align: left;
+    max-width: 576px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 20px;
+}
+
+.award > span:not(:first-child){
+    color: #000 !important;
 }
