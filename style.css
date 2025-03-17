@@ -256,6 +256,10 @@ h5{
     grid-column: 2/3;
 }
 
+.about__companies > img:not(:last-child){
+    margin-right: 50px;
+}
+
 #Work{
     padding: 150px 0 0 80px;
     display: grid;
@@ -519,6 +523,7 @@ h5{
 }
 
 #Process > .process__steps{
+    margin-top: 50px;
     grid-row: 3/4;
     grid-column: 1/4;
 }
@@ -570,4 +575,71 @@ h5{
     grid-column: 1/span 2;
 }
 
+#Shop{
+    padding: 150px 80px;
+    text-align: center;
+}
 
+#Shop > h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#Shop > h5::before,
+#Shop > h5::after{
+    content: url('./img/wave.svg');
+    margin: 0 15px;
+    align-self: center;
+    justify-self: center;
+}
+
+#Shop > h2{
+    margin: 25px 0;
+}
+
+.shop-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-item{
+    gap: 10px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transition: all .4s;
+}
+
+.shop-item:hover{
+    scale: 1.05;
+}
+
+.shop-item > img{
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.shop-item > h3{
+    font-weight: 400;
+}
+
+.shop__link{
+    padding: 10px 15px;
+    color: #4543E8;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4643e850;
+}
+
+.shop__link::after{
+    content: url('./img/6.shop/arrow_btn.svg');
+}
+
+.shop__link:hover{
+    color: #fff;
+    background-color: #4543E8;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff50;
+}
