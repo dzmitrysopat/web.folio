@@ -738,3 +738,59 @@ h5{
     grid-row: 5/6;
     grid-column: 1 / span 3;
 }
+
+#Other{
+    padding: 150px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other__block{
+    width: 720px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.other__block > h3,
+.other__block > span{
+    color: #fff;
+}
+
+.other__block > h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.other__block > span{
+    font-size: 400;
+    font-weight: 300;
+}
+
+#Other > .other__block:nth-child(1){
+    background: url('./img/1.work_img.png');
+    color: #fff;
+}
+
+#Other > .other__block:nth-child(2){
+    background: #4543E8;
+    color: #fff;
+}
+
+.other__block > a{
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 3px solid #ffffff81;
+}
+
+.other__block > a::after{
+    content: url('./img/7.Blog/arrow_btnE.svg');
+}
