@@ -24,7 +24,8 @@ h2,h3,p,span{
 
 header,
 #Banner,
-#Services{
+#Services,
+footer{
     background-color: #010032;
 }
 
@@ -98,7 +99,8 @@ h1{
 
 #Banner > a,
 #Services > article > a,
-#Blog > a{
+#Blog > a,
+article > button{
     padding: 20px 40px;
     width: fit-content;
     grid-row: 4/5;
@@ -270,7 +272,7 @@ h5{
     row-gap: 50px;
     column-gap: 100px;
     margin: 0 0 150px 0;
- }
+}
 
 #Work > h5{
     grid-column: 1/2;
@@ -328,7 +330,8 @@ h5{
     line-height: 28px;
 }
 
-#Work > .work__link{
+#Work > .work__link,
+article > button{
     grid-column: 2/3;
     grid-row: 6/7;
     width: 160px;
@@ -344,7 +347,8 @@ h5{
     transition: all .4s;
 }
 
-.work__link:hover{
+.work__link:hover,
+article > button{
     background-color: inherit !important;
     border: 2px solid #4543E8;
     color: #4543E8;
@@ -793,4 +797,59 @@ h5{
 
 .other__block > a::after{
     content: url('./img/7.Blog/arrow_btnE.svg');
+}
+
+footer{
+    position: relative;
+    padding: 100px 80px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+footer > h5{
+    color: #fff;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+footer > h5::before{
+    content: url('./img/4.services/line.svg');
+}
+
+marquee{
+    /* grid-row: 2/3;
+    grid-column: 1/span 4; */
+    position: absolute;
+    top: 150px;
+    font-size: 48px;
+}
+
+footer > a{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff33;
+}
+
+ul{
+    list-style-type: none;
+    color: #fff;
+}
+
+ul > li{
+    margin-bottom: 20px;
+}
+
+input{
+    max-height: 50px;
+    font-size: 20px;
+    border: 2px solid #ffffff1f;
+    border-radius: 50px;
+    padding: 25px;
+    background: inherit;
+}
+
+article > button{
+    background-color: #4543E8 !important;
+    height: 50px;
 }
