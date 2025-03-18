@@ -97,7 +97,8 @@ h1{
 }
 
 #Banner > a,
-#Services > article > a{
+#Services > article > a,
+#Blog > a{
     padding: 20px 40px;
     width: fit-content;
     grid-row: 4/5;
@@ -113,7 +114,8 @@ h1{
 }
 
 #Banner > a:hover,
-#Services > article > a:hover{
+#Services > article > a:hover,
+#Blog > a:hover{
     scale: 1.05;
     background-color: aquamarine;
 }
@@ -626,20 +628,113 @@ h5{
     font-weight: 400;
 }
 
-.shop__link{
+.shop__link,
+.post > a{
     padding: 10px 15px;
     color: #4543E8;
-    padding-bottom: 10px;
     border-bottom: 2px solid #4643e850;
 }
 
-.shop__link::after{
+.shop__link::after,
+.post > a::after{
     content: url('./img/6.shop/arrow_btn.svg');
 }
 
-.shop__link:hover{
+.shop__link:hover,
+.post > a:hover{
     color: #fff;
     background-color: #4543E8;
     padding-bottom: 10px;
     border-bottom: 2px solid #ffffffa9;
+}
+
+#Blog{
+    padding: 150px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+}
+
+#Blog > h5::before{
+    margin: 0 10px;
+    content: url(./img/wave.svg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#Blog > h2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#Blog > a{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #fff;
+    background: #4543E8;
+}
+
+#Blog > a::after{
+    margin-top: 5px;
+    content: url('./img/7.Blog/arrow_btnE.svg');
+}
+
+#Blog > .post{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3, 50px);
+    border-bottom: 2px solid #F1F2F6 ;
+    padding-bottom: 46px;
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 50px;
+}
+
+.post > img{
+    grid-row: 1 / span 2;
+    grid-column: 1/2;
+    width: 376px;
+    height: 240px;
+}
+
+.post > .post__date{
+    color: #4543E8;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.post > .post__name{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.post > .post__description{
+    
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.post > a{
+    height: fit-content;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+#Blog > .post:nth-child(4){
+    margin-top: 80px;
+    grid-row: 3/4;
+    grid-column: 1 / span 3;
+}
+
+#Blog > .post:nth-child(5){
+    grid-row: 4/5;
+    grid-column: 1 / span 3;
+}
+
+#Blog > .post:nth-child(6){
+    grid-row: 5/6;
+    grid-column: 1 / span 3;
 }
